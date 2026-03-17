@@ -1,11 +1,14 @@
 # Agenda (40 min)
-- Beräkningsvetenskap
-  - Roligaste kurserna
-- Examensarbete
-  - Ansökningar (lyckade och olyckade)
-  - IMINT
-    - Videokvalite
-- Jobb
+- Studierna (10 min)
+  - Beräkningsvetenskap
+    - Roligaste kurserna
+  - Examensarbete (ganska lite)
+    - Ansökningar (lyckade och olyckade)
+    - IMINT
+      - Videokvalite
+- Jobb (20 min)
+  - Exjobbet?
+    - Tidigare år hade exjobbare fått anställning men pga ekonomi så kunde ingen erbjudas nytt jobb det året
   - Jobbsökande
     - BM System - verkade inte så kul, mest kodknackande
     - AirForestry - verkar riktigt roligt, men dom ändrade sig och skulle inte anställa någon längre
@@ -25,7 +28,8 @@
       - Server
       - Docker
       - Kubernetes
-- AI - min personliga take
+    - Litet företag fördelar och nackdelar
+- AI - min personliga take (10 min)
   - Bra, väldigt bra om man vet vad man vill åtstadkomma
   - Fokusera på att bli bra konceptuella programmerare, och inte bara kodknackare
     - Vilka byggstenar behövs och hur borde dom sitta ihop
@@ -39,6 +43,16 @@
     - 
   - Kardemumma: Lär er använda AI, men lär er även grunderna
 
+# Feedback
+- Det som studenter på liknande föreläsningar tidigare tyckt varit bra är att höra om just övergången till det första jobbet. Hur hittar man ett? Vart letar man? Vad för typ av jobb kan det vara? Och hur just inriktningen beräkningsvetenskap spelade roll just för dig.
+- Lydia
+  - Hur det var att söka jobb? Hade du jobb under studietiden? (nej men fritidsprojekt)
+  - Bästa kurser (kolla förra)
+  - Var det självklart att välja beräkningsteknik eller tvivlade du?
+  - Vad hade du valt idag? (Mer inslag av praktisk inbyggda, jobbar med en sensor som är ett inbyggt system)
+  - Var betygen viktiga?
+  - Hur valde du kurser? Visste du vart du ville komma?
+
 # Memes
 - Jobbsökande, tror man ska få jobbet men så får man det inte
   - Anakin & Padme
@@ -49,6 +63,7 @@
 
 # Interaktivitet? 
 - Vägval, vilken del ska vi avhandla först?
+- Ställ fiktiv fråga till mig själv på slides
 
 # Frågor? 
 - Emellan varje block?
