@@ -22,6 +22,9 @@
     - Fick svar inom någon timme och fick komma in på intervju veckan efter. Fick göra ett programmeringstest hemma som jag redovisade på en andra intervju. Sen fick jag svar ganska snabbt att jag blivit anställd
     - Systemutvecklare på pappret, fullstack+ i praktiken
       - Var en rejäl crash course det första året
+        - Man lär sig jättemycket på jobbet
+        - Är ganska lite av det man lärde sig i skolan som man har direkt använding för
+        - Problemlösningsskillz mycket bra att ha, och att vara snabblärd
       - Bygge
       - AI-kamera
       - Inbyggda system
@@ -52,6 +55,8 @@
   - Vad hade du valt idag? (Mer inslag av praktisk inbyggda, jobbar med en sensor som är ett inbyggt system)
   - Var betygen viktiga?
   - Hur valde du kurser? Visste du vart du ville komma?
+  - Vilken typ av exjobb man gör påverkar jobb man kan få?
+  - Jag är en (gammal) datapunkt, svårt att säga exakt hur det kommer gå för er 
 
 # Memes
 - Jobbsökande, tror man ska få jobbet men så får man det inte
