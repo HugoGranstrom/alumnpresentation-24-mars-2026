@@ -39,6 +39,14 @@ li {
 
 nimConfTheme()
 
+template liText(text: string) =
+  listItem:
+    nbText: text
+
+template questions =
+  slide:
+    bigText: "Frågor?"
+
 template intro =
   slide:
     slide:
@@ -46,31 +54,50 @@ template intro =
 ### Hugo Granström
 Alumnveckan 2026
 """
+    slide:
+      nbText: "### Agenda"
+      unorderedList:
+        liText: "Studietiden"
+        liText: "Exjobb"
+        liText: "Jakten på det första jobbet"
+        liText: "Första jobbet"
+        liText: "AI"
 
 template studies =
   slide:
     slide:
-      nbText: "Studies" 
+      nbText: "Studietiden"
+    questions()
 
 template exjobb =
   slide:
     slide:
-      nbText: "Exjobb" 
+      nbText: "Exjobb"
+    questions()
 
 template jobSearch =
   slide:
     slide:
-      nbText: "Jobsökande" 
+      nbText: "Jobsökande"
+    questions()
 
 template firstJob =
   slide:
     slide:
       nbText: "Första jobbet"
+    questions()
 
 template ai =
   slide:
     slide:
       nbText: "AI"
+    questions()
+
+template avslutning =
+  slide:
+    slide:
+      nbText: "Tack och bock"
+    questions()
 
 intro()
 studies()
@@ -78,6 +105,7 @@ exjobb()
 jobSearch()
 firstJob()
 ai()
+avslutning()
 
 
 

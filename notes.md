@@ -9,7 +9,7 @@
 - Jobb (20 min)
   - Exjobbet?
     - Tidigare år hade exjobbare fått anställning men pga ekonomi så kunde ingen erbjudas nytt jobb det året
-  - Jobbsökande
+  - Jobbsökande - jakten på det första jobbet (indiana jones?)
     - BM System - verkade inte så kul, mest kodknackande
     - AirForestry - verkar riktigt roligt, men dom ändrade sig och skulle inte anställa någon längre
     - Konsolutbolag i Stockholm - kändes inte lockande
@@ -45,6 +45,9 @@
       - Drivs av batteri, så behöver vara strömsnål
     - 
   - Kardemumma: Lär er använda AI, men lär er även grunderna
+- Avslutning
+  - Taco-bock emojis
+  - QR-kod till slides 
 
 # Feedback
 - Det som studenter på liknande föreläsningar tidigare tyckt varit bra är att höra om just övergången till det första jobbet. Hur hittar man ett? Vart letar man? Vad för typ av jobb kan det vara? Och hur just inriktningen beräkningsvetenskap spelade roll just för dig.
