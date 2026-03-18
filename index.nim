@@ -39,10 +39,46 @@ li {
 
 nimConfTheme()
 
-slide:
-  nbText: hlMd"""
+template intro =
+  slide:
+    slide:
+      nbText: hlMd"""
 ### Hugo Granström
 Alumnveckan 2026
 """
+
+template studies =
+  slide:
+    slide:
+      nbText: "Studies" 
+
+template exjobb =
+  slide:
+    slide:
+      nbText: "Exjobb" 
+
+template jobSearch =
+  slide:
+    slide:
+      nbText: "Jobsökande" 
+
+template firstJob =
+  slide:
+    slide:
+      nbText: "Första jobbet"
+
+template ai =
+  slide:
+    slide:
+      nbText: "AI"
+
+intro()
+studies()
+exjobb()
+jobSearch()
+firstJob()
+ai()
+
+
 
 nbSave
