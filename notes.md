@@ -78,3 +78,18 @@
 
 # Utveckling?
 - En progressbar som ökar och är animerbar med Reveal!
+
+# Presentationsteknik
+- How to avoid death By PowerPoint - https://www.youtube.com/watch?v=Iwpi1Lm6dFo&t=464s
+  - One message per slide
+  - Short bits of text and image
+    - avoid sentences
+  - Big things get attention
+    - Small title if not important
+    - Most important part should be the biggest
+  - Constrast
+    - use contrast to control what the audicence should look at
+    - fade out things not important anymore
+    - dark background
+  - Keep number of objects low - max 6
+  - more slides is not bad
