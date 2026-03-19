@@ -2,6 +2,7 @@
 - Studierna (10 min)
   - Beräkningsvetenskap
     - Roligaste kurserna
+      - Hade behövt förklara mitt jobb först
   - Examensarbete (ganska lite)
     - Ansökningar (lyckade och olyckade)
     - IMINT

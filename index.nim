@@ -253,48 +253,79 @@ Alumnveckan 2026
 
 template studies =
   slide:
-    slide:
-      nbText: "Studietiden"
-    questions()
+    autoAnimateSlides(4):
+      nbText: "### Studietiden"
+      showAt(2):
+        fragment(fadeInThenSemiOut):
+          nbText: "Började 2018"
+        fragment(fadeInThenSemiOut):
+          nbText: "Examen 2023"
+      showAt(3..4):
+        nbText: "Beräkningsvetenskap"
+      showAt(4):
+        nbText: "\"AI-inriktning\""
+   
+    autoAnimateSlides(5):
+      nbText: "### Användbara Kurser"
+      showAt(2):
+        unorderedList:
+          liText: "Databasteknik I"
+          liText: "Högprestandaprogrammering"
+      showAt(3):
+        unorderedList:
+          liText: "Statistisk maskininlärning"
+          liText: "Förstärkningsinlärning"
+      showAt(4):
+        unorderedList:
+          liText: "Datoriserad bildanalys I"
+          liText: "Djup maskininlärning för bildanalys"
+
+    autoAnimateSlides(2):
+      bigText: "Hade jag gjort annorlunda?"
+      showAt(2):
+        unorderedList:
+          liText: "Inbyggda system" # läste elektronik men inte praktisk användning av det. För teoretiskt
+          liText: "Begränsade val"
+    #questions()
 
 template exjobb =
   slide:
     slide:
       nbText: "Exjobb"
-    questions()
+    #questions()
 
 template jobSearch =
   slide:
     slide:
       nbText: "Jobsökande"
-    questions()
+    #questions()
 
 template firstJob =
   slide:
     slide:
       nbText: "Första jobbet"
-    questions()
+    #questions()
 
 template ai =
   slide:
     slide:
       nbText: "AI"
-    questions()
+    #questions()
 
 template avslutning =
   slide:
     slide:
       nbText: "Tack och bock"
-    questions()
+    #questions()
 
-questions()
-intro()
+#questions()
+#intro()
 studies()
-exjobb()
-jobSearch()
-firstJob()
-ai()
-avslutning()
+# exjobb()
+# jobSearch()
+# firstJob()
+# ai()
+# avslutning()
 
 
 
