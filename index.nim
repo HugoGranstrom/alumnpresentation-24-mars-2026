@@ -251,30 +251,6 @@ Alumnveckan 2026
         liText: "Första jobbet"
         liText: "AI"
 
-template kurser =
-  slide:
-    autoAnimateSlides(5):
-      nbText: "### Användbara Kurser"
-      showAt(2):
-        unorderedList:
-          liText: "Databasteknik I"
-          liText: "Högprestandaprogrammering"
-      showAt(3):
-        unorderedList:
-          liText: "Statistisk maskininlärning"
-          liText: "Förstärkningsinlärning"
-      showAt(4):
-        unorderedList:
-          liText: "Datoriserad bildanalys I"
-          liText: "Djup maskininlärning för bildanalys"
-
-    autoAnimateSlides(2):
-      bigText: "Hade jag gjort annorlunda?"
-      showAt(2):
-        unorderedList:
-          liText: "Inbyggda system" # läste elektronik men inte praktisk användning av det. För teoretiskt
-          liText: "Begränsade val"
-
 template studies =
   slide:
     autoAnimateSlides(5):
@@ -304,11 +280,6 @@ template exjobb =
             liText: "Analysera videokvalité"
             liText: "Behandlades som anställd"
             liText: "Jobb?"
-
-      
-
-      
-
     #questions()
 
 template jobSearch =
@@ -360,23 +331,58 @@ template jobSearch =
             liText: "Sep 22:"
       showAt(2):
         fitImage("assets/fick_jobbet.jpg")
-      
 
-
-
-
-    # totalt 60+ ansökningar
-    # vad hjälpte mig att få jobb? Kan bara spekulera. Fritidsprojekt? Engagemang? Intryck på intervjun?
-
-
-
-    #questions()
+    autoAnimateSlides(7):
+      nbText: "### Kardemumman"
+      showAt(2..4):
+        nbText: "5 månader"
+      showAt(3..4):
+        nbText: "60+ ansökningar"
+      showFrom(4):
+        nbText: "Vad hjälpte?"
+      showAt(5):
+        fitImage("assets/idk.jpg")
+      showAt(6):
+        fitImage("assets/the_same_cv.jpg")
+      showAt(7):
+        unorderedList:
+          liText: "Engagemang i IT-gruppen"
+          liText: "Aktiv inom open source"
+    slide:
+      swing:
+        bigText: "Frågor?"
 
 template firstJob =
   slide:
     slide:
       nbText: "Första jobbet"
-    #questions()
+    slide:
+      bouncing:
+        bigText: "Frågor?"
+
+template kurser =
+  slide:
+    autoAnimateSlides(5):
+      nbText: "### Användbara Kurser"
+      showAt(2):
+        unorderedList:
+          liText: "Databasteknik I"
+          liText: "Högprestandaprogrammering"
+      showAt(3):
+        unorderedList:
+          liText: "Statistisk maskininlärning"
+          liText: "Förstärkningsinlärning"
+      showAt(4):
+        unorderedList:
+          liText: "Datoriserad bildanalys I"
+          liText: "Djup maskininlärning för bildanalys"
+
+    autoAnimateSlides(2):
+      bigText: "Hade jag gjort annorlunda?"
+      showAt(2):
+        unorderedList:
+          liText: "Inbyggda system" # läste elektronik men inte praktisk användning av det. För teoretiskt
+          liText: "Begränsade val"
 
 template ai =
   slide:
@@ -394,8 +400,8 @@ template avslutning =
 #intro()
 #studies()
 #exjobb()
-jobSearch()
-# firstJob()
+#jobSearch()
+firstJob()
 #kurser()
 # ai()
 # avslutning()
