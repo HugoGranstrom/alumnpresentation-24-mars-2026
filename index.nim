@@ -251,20 +251,8 @@ Alumnveckan 2026
         liText: "Första jobbet"
         liText: "AI"
 
-template studies =
+template kurser =
   slide:
-    autoAnimateSlides(4):
-      nbText: "### Studietiden"
-      showAt(2):
-        fragment(fadeInThenSemiOut):
-          nbText: "Började 2018"
-        fragment(fadeInThenSemiOut):
-          nbText: "Examen 2023"
-      showAt(3..4):
-        nbText: "Beräkningsvetenskap"
-      showAt(4):
-        nbText: "\"AI-inriktning\""
-   
     autoAnimateSlides(5):
       nbText: "### Användbara Kurser"
       showAt(2):
@@ -286,18 +274,83 @@ template studies =
         unorderedList:
           liText: "Inbyggda system" # läste elektronik men inte praktisk användning av det. För teoretiskt
           liText: "Begränsade val"
+
+template studies =
+  slide:
+    autoAnimateSlides(5):
+      nbText: "### Studietiden"
+      showAt(2):
+        fragment(fadeInThenSemiOut):
+          nbText: "Började 2018"
+        fragment(fadeInThenSemiOut):
+          nbText: "Examen 2023"
+      showAt(3..4):
+        nbText: "Beräkningsvetenskap" # berätta varför jag läste det
+      showAt(4):
+        nbText: "\"AI-inriktning\""
+      showAt(5):
+        nbText: "IT-gruppen"
     #questions()
 
 template exjobb =
   slide:
-    slide:
-      nbText: "Exjobb"
+    autoAnimateSlides(2):
+      nbText: "### Exjobb"
+      showAt(2):
+        unorderedList:
+          liText: "Sökandet"
+          liText: "IMINT"
+          unorderedList:
+            liText: "Analysera videokvalité"
+            liText: "Behandlades som anställd"
+            liText: "Jobb?"
+
+      
+
+      
+
     #questions()
 
 template jobSearch =
   slide:
+    autoAnimateSlides(2):
+      nbText: "### Jobbsökande"
+      showAt(2):
+        nbImage("assets/gru.jpg")
     slide:
-      nbText: "Jobsökande"
+      nbText: "### Maj"
+      unorderedList:
+        liText: "Nej från exjobbet"
+        liText: "Airforestry - halvt spontanansökan"
+    slide:
+      nbText: "### Juni"
+      unorderedList:
+        liText: "BM System - Junior Systemutvecklare"
+        unorderedList:
+          liText: "Intervju"
+          liText: "Programmeringstest"
+    slide:
+      nbText: "### Juli"
+      fragment:
+        fitImage("assets/semester.jpg")
+    autoAnimateSlides(3):
+      nbText: "### Augusti"
+      showAt(2):
+        nbImage("assets/blackvard_cv.jpg")
+      showAt(3):
+        unorderedList:
+          liText: "Sensebit - Systemutvecklare"
+          unorderedList:
+            liText: "Torsdag: ansökan LinkedIn"
+            liText: "Svar inom någon timme"
+            liText: "Måndag: intervju"
+      # konsult i stockholm
+      # kossorna
+
+    # vad hjälpte mig att få jobb? Kan bara spekulera. Fritidsprojekt? Engagemang? Intryck på intervjun?
+
+
+
     #questions()
 
 template firstJob =
@@ -320,10 +373,11 @@ template avslutning =
 
 #questions()
 #intro()
-studies()
-# exjobb()
-# jobSearch()
+#studies()
+#exjobb()
+jobSearch()
 # firstJob()
+#kurser()
 # ai()
 # avslutning()
 

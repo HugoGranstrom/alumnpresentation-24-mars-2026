@@ -15,6 +15,7 @@
     - AirForestry - verkar riktigt roligt, men dom ändrade sig och skulle inte anställa någon längre
     - Konsolutbolag i Stockholm - kändes inte lockande
     - I backspegeln så var jag ganska kräsen
+    - Vad gjorde jag medan jag sökte jobb: Hollow Knight!
   - Saker som hjälpte (Fråga Joel)
     - Unikt CV? Slides
     - Fritidsprojekt - 
@@ -94,3 +95,7 @@
     - dark background
   - Keep number of objects low - max 6
   - more slides is not bad
+
+# Easter eggs
+- Trollstigen meme
+  - John Travolta?
