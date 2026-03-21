@@ -322,6 +322,7 @@ template jobSearch =
       unorderedList:
         liText: "Nej från exjobbet"
         liText: "Airforestry - halvt spontanansökan"
+        liText: "Echo State - via rekryterare"
     slide:
       nbText: "### Juni"
       unorderedList:
@@ -333,20 +334,38 @@ template jobSearch =
       nbText: "### Juli"
       fragment:
         fitImage("assets/semester.jpg")
-    autoAnimateSlides(3):
+    autoAnimateSlides(4):
       nbText: "### Augusti"
       showAt(2):
-        nbImage("assets/blackvard_cv.jpg")
+        fitImage("assets/blackvard_cv.jpg")
       showAt(3):
+        fragment:
+          nbImage("assets/hollow_knight.jpg")
+      showAt(4):
         unorderedList:
           liText: "Sensebit - Systemutvecklare"
           unorderedList:
-            liText: "Torsdag: ansökan LinkedIn"
+            liText: "Torsdag Aug 24: ansökan LinkedIn"
             liText: "Svar inom någon timme"
             liText: "Måndag: intervju"
-      # konsult i stockholm
-      # kossorna
+    autoAnimateSlides(2):
+      nbText: "### September"
+      showAt(1):
+        unorderedList:
+          liText: "Sensebit"
+          unorderedList:
+            liText: "Sep 6: andra intervjun"
+            liText: "Programmeringstest"
+            liText: "Sep 20: redovisning"
+            liText: "Sep 22:"
+      showAt(2):
+        fitImage("assets/fick_jobbet.jpg")
+      
 
+
+
+
+    # totalt 60+ ansökningar
     # vad hjälpte mig att få jobb? Kan bara spekulera. Fritidsprojekt? Engagemang? Intryck på intervjun?
 
 
