@@ -1,4 +1,4 @@
-import std / [strutils, algorithm, strformat]
+import std / [strutils]
 import nimiSlides, nimib
 
 nbInit(theme = revealTheme)
@@ -9,7 +9,6 @@ template nimConfTheme*() =
   nb.addStyle: """
 :root {
   --r-background-color: #181922;
-  --r-heading-color: $1;
   --r-link-color: $1;
   --r-main-font-size: 37px;
 }
@@ -284,9 +283,13 @@ template exjobb =
 
 template jobSearch =
   slide:
-    autoAnimateSlides(2):
+    autoAnimateSlides(4):
       nbText: "### Jobbsökande"
       showAt(2):
+        nbImage("assets/letar_jobb.gif")
+      showAt(3):
+        fitImage("assets/how_hard_can_it_be.jpg")
+      showAt(4):
         nbImage("assets/gru.jpg")
     slide:
       nbText: "### Maj"
@@ -323,12 +326,10 @@ template jobSearch =
       nbText: "### September"
       showAt(1):
         unorderedList:
-          liText: "Sensebit"
-          unorderedList:
-            liText: "Sep 6: andra intervjun"
-            liText: "Programmeringstest"
-            liText: "Sep 20: redovisning"
-            liText: "Sep 22:"
+          liText: "Sep 6: andra intervjun"
+          liText: "Programmeringstest"
+          liText: "Sep 20: redovisning"
+          liText: "Sep 22:"
       showAt(2):
         fitImage("assets/fick_jobbet.jpg")
 
@@ -374,22 +375,31 @@ template firstJob =
         nbText: "#### Trafficweb"
         fragment:
           nbImage("assets/trafficweb.png")
-    # Teamet - 3 pers
-    #   Fördelar och nackdelar
-    #   Ansvar
-    #   Kan påverka
-    # Arbetsuppgifter - väldigt varierat
-    #   Systemutvecklare på pappret - högst oklart begrepp, snarare Fullstackutvecklare+
-    autoAnimateSlides(5):
+    autoAnimateSlides(3):
+      nbText: "### Jobbet"
+      showAt(2):
+        unorderedList:
+          liText: "Kontor: Uppsala & Kista"
+          liText: "6 anställda, 3 utvecklare"
+          liText: "Systemutvecklare"
+          unorderedList:
+            liText: "Programmera"
+            liText: "Drifta"
+            liText: "Bygga"
+      showAt(3):
+        unorderedList:
+          liText: "Ansvar"
+          liText: "Påverka"
+          liText: "Varierade arbetsuppgifter"
+    autoAnimateSlides(3):
       nbText: "### Första året"
       showAt(2):
         nbImage("assets/first_year.jpg")
-    # Första tiden - riktig crash course om allt möjligt
-    # - Man lär sig jättemycket på jobbet
-    # - Är ganska lite av det man lärde sig i skolan som man har direkt använding för
-    # - Problemlösningsskillz mycket bra att ha, och att vara snabblärd
-
-      
+      showAt(3):
+        unorderedList:
+          liText: "Crash course"
+          liText: "Nytta av kursmaterial?"
+          liText: "Problemlösning & snabblärd"      
     slide:
       bouncing:
         bigText: "Frågor?"
@@ -437,8 +447,8 @@ template avslutning =
 #intro()
 #studies()
 #exjobb()
-#jobSearch()
-firstJob()
+jobSearch()
+#firstJob()
 #kurser()
 # ai()
 # avslutning()
