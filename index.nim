@@ -248,7 +248,7 @@ Alumnveckan 2026
         liText: "Exjobb"
         liText: "Jakten på det första jobbet"
         liText: "Första jobbet"
-        liText: "AI"
+        liText: "AI för kodning (min personliga take)"
 
 template studies =
   slide:
@@ -260,7 +260,7 @@ template studies =
         fragment(fadeInThenSemiOut):
           nbText: "Examen 2023"
       showAt(3..4):
-        nbText: "Beräkningsvetenskap" # berätta varför jag läste det
+        nbText: "Beräkningsvetenskap"
       showAt(4):
         nbText: "\"AI-inriktning\""
       showAt(5):
@@ -297,7 +297,7 @@ template jobSearch =
       unorderedList:
         liText: "Nej från exjobbet"
         liText: "Airforestry - halvt spontanansökan"
-        liText: "Echo State - via rekryterare"
+        liText: "Echo State"
     slide:
       nbText: "### Juni"
       unorderedList:
@@ -402,7 +402,7 @@ template firstJob =
           liText: "Nytta av kursmaterial?"
           liText: "Problemlösning & snabblärd"      
     slide:
-      bouncing:
+      heartbeat:
         bigText: "Frågor?"
 
 template kurser =
@@ -434,26 +434,56 @@ template kurser =
 
 template ai =
   slide:
+    autoAnimateSlides(6):
+      nbText: "### AI för kodning (min personliga take)"
+      showAt(2):
+        unorderedList:
+          liText: "Chatbot (Kagi)"
+          unorderedList:
+            liText: "Ersatte sökningar / Stackoverflow"
+            liText: "Copy-Paste"
+          liText: "Claude Code"
+          unorderedList:
+            liText: "Tillgång till all kod"
+            liText: "Kan göra ändringar själv"
+      showAt(3):
+        nbImage("assets/shitin_shitout.jpg")
+      showAt(4):
+        nbImage("assets/vibe_code.jpg")
+      showAt(5):
+        unorderedList:
+          liText: "`Vibe-koda != Koda med AI`"
+          liText: "Skriva tråkig kod"
+          liText: "Jag är ansvarig för koden som skrivs"
+          unorderedList:
+            liText: "Jag måste förstå koden"
+      showAt(6):
+        unorderedList:
+          liText: "Förstå kod"
+          liText: "Högnivå förståelse av system"
+
     slide:
-      nbText: "AI"
-    #questions()
+      ufoFloat:
+        bigText: "Frågor?"
 
 template avslutning =
   slide:
     slide:
-      nbText: "Tack och bock"
-    #questions()
+      jello:
+        nbText: "Tack o bock 🌮🐐"
+      
+        bigText: "Frågor?"
 
-#questions()
+questions()
 intro()
 studies()
 exjobb()
 jobSearch()
 firstJob()
 kurser()
-# ai()
-# avslutning()
+ai()
+avslutning()
 
-
+useScrollWheel()
 
 nbSave

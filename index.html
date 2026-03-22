@@ -42,11 +42,164 @@ li {
   <div class="reveal">
     <div class="slides">
       <section data-nimib-slide-number="1" >
+          <style>
+        @keyframes jello {
+            0%, 11.1%, 100% { transform: none; }
+            22.2% { transform: skewX(-12.5deg) skewY(-12.5deg); }
+            33.3% { transform: skewX(6.25deg) skewY(6.25deg); }
+            44.4% { transform: skewX(-3.125deg) skewY(-3.125deg); }
+            55.5% { transform: skewX(1.5625deg) skewY(1.5625deg); }
+            66.6% { transform: skewX(-0.78125deg) skewY(-0.78125deg); }
+            77.7% { transform: skewX(0.390625deg) skewY(0.390625deg); }
+            88.8% { transform: skewX(-0.1953125deg) skewY(-0.1953125deg); }
+        }
+        .jello-effect {
+            color: #e67e22;
+            animation: jello 3s infinite;
+            display: inline-block;
+            transform-origin: center center;
+        }
+    </style>
+    <div class="jello-effect">
+  
+      <h2 class="r-fit-text"> <p>Frågor?</p> </h2>
+      </div>
+      </section>
       <section data-nimib-slide-number="2" >
+          <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-25px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-effect {
+            color: #2ecc71;
+            text-shadow: 0 0 20px #2ecc71;
+            animation: float 4s ease-in-out infinite;
+            display: inline-block;
+        }
+    </style>
+    <div class="float-effect">
+  
+      <h2 class="r-fit-text"> <p>Frågor?</p> </h2>
+      </div>
+      </section>
+      <section data-nimib-slide-number="3" >
+          <style>
+        @keyframes tada {
+            0% { transform: scale3d(1, 1, 1) rotate(0); }
+            10%, 20% { transform: scale3d(.9, .9, .9) rotate(-3deg); }
+            30%, 50%, 70%, 90% { transform: scale3d(1.1, 1.1, 1.1) rotate(3deg); }
+            40%, 60%, 80% { transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg); }
+            100% { transform: scale3d(1, 1, 1) rotate(0); }
+        }
+        .tada-effect {
+            color: #f1c40f;
+            animation: tada 3s infinite;
+            display: inline-block;
+        }
+    </style>
+    <div class="tada-effect">
+  
+      <h2 class="r-fit-text"> <p>Frågor?</p> </h2>
+      </div>
+      </section>
+      <section data-nimib-slide-number="4" >
+          <style>
+    @keyframes slowRotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    .rotate-slow {
+        color: #3498db;
+        /* 10s duration, linear timing for constant speed */
+        animation: slowRotate 10s linear infinite;
+        display: inline-block; /* Required for rotation to work on text */
+    }
+    </style>
+    <div class="rotate-slow">
+  
+      <h2 class="r-fit-text"> <p>Frågor?</p> </h2>
+      </div>
+      </section>
+      <section data-nimib-slide-number="5" >
+      <style>
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-30px); }
+    }
+    .bounce-question {
+        animation: bounce 2s infinite;
+        color: #e74c3c;
+    }
+</style>
+<div class="bounce-question">
+      <h2 class="r-fit-text"> <p>Frågor?</p> </h2>
+      </div>
+      </section>
+      <section data-nimib-slide-number="6" >
+      <style>
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+    .pulse-effect {
+        color: #e74c3c;
+        animation: pulse 1.5s infinite ease-in-out;
+        display: inline-block;
+    }
+</style>
+<div class="pulse-effect">
+      <h2 class="r-fit-text"> <p>Frågor?</p> </h2>
+      </div>
+      </section>
+      <section data-nimib-slide-number="7" >
+          <style>
+        @keyframes squish-only {
+            0% { transform: scale(1, 1); }
+            25% { transform: scale(1, 0.75); } /* Compressed to 75% height, width stays normal */
+            40% { transform: scale(1, 0.9); }  /* Recovering slightly */
+            60% { transform: scale(1, 1); }    /* Back to normal */
+            75% { transform: scale(1, 0.95); } /* Small secondary squish */
+            100% { transform: scale(1, 1); }
+        }
+        .squish-effect {
+            color: #3498db;
+            animation: squish-only 2s infinite;
+            display: inline-block;
+        }
+    </style>
+<div class="squish-effect">
+      <h2 class="r-fit-text"> <p>Frågor?</p> </h2>
+      </div>
+      </section>
+      <section data-nimib-slide-number="8" >
+          <style>
+        @keyframes swing {
+            20% { transform: rotate3d(0, 0, 1, 15deg); }
+            40% { transform: rotate3d(0, 0, 1, -10deg); }
+            60% { transform: rotate3d(0, 0, 1, 5deg); }
+            80% { transform: rotate3d(0, 0, 1, -5deg); }
+            100% { transform: rotate3d(0, 0, 1, 0deg); }
+        }
+        .swing-effect {
+            color: #f1c40f;
+            transform-origin: top center;
+            animation: swing 3s infinite ease-in-out;
+            display: inline-block;
+        }
+    </style>
+    <div class="swing-effect">
+      <h2 class="r-fit-text"> <p>Frågor?</p> </h2>
+      </div>
+      </section>
+      <section data-nimib-slide-number="9" >
+      <section data-nimib-slide-number="10" >
       <h3>Hugo Granström</h3>
 <p>Alumnveckan 2026</p>
       </section>
-      <section data-nimib-slide-number="3" >
+      <section data-nimib-slide-number="11" >
       <h3>Agenda</h3>
       <ul>
       <div class="fragment fade-in" data-fragment-index="0" data-fragment-index-nimib="0"> 
@@ -80,18 +233,18 @@ li {
       <div class="fragment fade-in" data-fragment-index="4" data-fragment-index-nimib="4"> 
   
       <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="4" data-fragment-index-nimib="4">
-      <p>AI</p>
+      <p>AI för kodning (min personliga take)</p>
       </li>
       </div>
   
       </ul>
       </section>
       </section>
-      <section data-nimib-slide-number="4" >
-      <section data-nimib-slide-number="5" data-auto-animate >
+      <section data-nimib-slide-number="12" >
+      <section data-nimib-slide-number="13" data-auto-animate >
       <h3>Studietiden</h3>
       </section>
-      <section data-nimib-slide-number="6" data-auto-animate >
+      <section data-nimib-slide-number="14" data-auto-animate >
       <h3>Studietiden</h3>
       <div class="fragment fade-in-then-semi-out" data-fragment-index="5" data-fragment-index-nimib="5"> 
   
@@ -104,25 +257,25 @@ li {
       </div>
   
       </section>
-      <section data-nimib-slide-number="7" data-auto-animate >
+      <section data-nimib-slide-number="15" data-auto-animate >
       <h3>Studietiden</h3>
       <p>Beräkningsvetenskap</p>
       </section>
-      <section data-nimib-slide-number="8" data-auto-animate >
+      <section data-nimib-slide-number="16" data-auto-animate >
       <h3>Studietiden</h3>
       <p>Beräkningsvetenskap</p>
       <p>&quot;AI-inriktning&quot;</p>
       </section>
-      <section data-nimib-slide-number="9" data-auto-animate >
+      <section data-nimib-slide-number="17" data-auto-animate >
       <h3>Studietiden</h3>
       <p>IT-gruppen</p>
       </section>
       </section>
-      <section data-nimib-slide-number="10" >
-      <section data-nimib-slide-number="11" data-auto-animate >
+      <section data-nimib-slide-number="18" >
+      <section data-nimib-slide-number="19" data-auto-animate >
       <h3>Exjobb</h3>
       </section>
-      <section data-nimib-slide-number="12" data-auto-animate >
+      <section data-nimib-slide-number="20" data-auto-animate >
       <h3>Exjobb</h3>
       <ul>
       <div class="fragment fade-in" data-fragment-index="7" data-fragment-index-nimib="7"> 
@@ -164,7 +317,7 @@ li {
       </ul>
       </ul>
       </section>
-      <section data-nimib-slide-number="13" >
+      <section data-nimib-slide-number="21" >
       <style>
     @keyframes pulse {
         0% { transform: scale(1); }
@@ -182,29 +335,29 @@ li {
       </div>
       </section>
       </section>
-      <section data-nimib-slide-number="14" >
-      <section data-nimib-slide-number="15" data-auto-animate >
+      <section data-nimib-slide-number="22" >
+      <section data-nimib-slide-number="23" data-auto-animate >
       <h3>Jobbsökande</h3>
       </section>
-      <section data-nimib-slide-number="16" data-auto-animate >
+      <section data-nimib-slide-number="24" data-auto-animate >
       <h3>Jobbsökande</h3>
       <figure>
 <img src="assets/letar_jobb.gif" alt="">
 <figcaption></figcaption>
 </figure>
       </section>
-      <section data-nimib-slide-number="17" data-auto-animate >
+      <section data-nimib-slide-number="25" data-auto-animate >
       <h3>Jobbsökande</h3>
       <img data-src="assets/how_hard_can_it_be.jpg" class="r-stretch">
       </section>
-      <section data-nimib-slide-number="18" data-auto-animate >
+      <section data-nimib-slide-number="26" data-auto-animate >
       <h3>Jobbsökande</h3>
       <figure>
 <img src="assets/gru.jpg" alt="">
 <figcaption></figcaption>
 </figure>
       </section>
-      <section data-nimib-slide-number="19" >
+      <section data-nimib-slide-number="27" >
       <h3>Maj</h3>
       <ul>
       <div class="fragment fade-in" data-fragment-index="12" data-fragment-index-nimib="12"> 
@@ -224,13 +377,13 @@ li {
       <div class="fragment fade-in" data-fragment-index="14" data-fragment-index-nimib="14"> 
   
       <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="14" data-fragment-index-nimib="14">
-      <p>Echo State - via rekryterare</p>
+      <p>Echo State</p>
       </li>
       </div>
   
       </ul>
       </section>
-      <section data-nimib-slide-number="20" >
+      <section data-nimib-slide-number="28" >
       <h3>Juni</h3>
       <ul>
       <div class="fragment fade-in" data-fragment-index="15" data-fragment-index-nimib="15"> 
@@ -258,7 +411,7 @@ li {
       </ul>
       </ul>
       </section>
-      <section data-nimib-slide-number="21" >
+      <section data-nimib-slide-number="29" >
       <h3>Juli</h3>
       <div class="fragment fade-in" data-fragment-index="18" data-fragment-index-nimib="18"> 
   
@@ -266,14 +419,14 @@ li {
       </div>
   
       </section>
-      <section data-nimib-slide-number="22" data-auto-animate >
+      <section data-nimib-slide-number="30" data-auto-animate >
       <h3>Augusti</h3>
       </section>
-      <section data-nimib-slide-number="23" data-auto-animate >
+      <section data-nimib-slide-number="31" data-auto-animate >
       <h3>Augusti</h3>
       <img data-src="assets/blackvard_cv.jpg" class="r-stretch">
       </section>
-      <section data-nimib-slide-number="24" data-auto-animate >
+      <section data-nimib-slide-number="32" data-auto-animate >
       <h3>Augusti</h3>
       <div class="fragment fade-in" data-fragment-index="19" data-fragment-index-nimib="19"> 
   
@@ -284,7 +437,7 @@ li {
       </div>
   
       </section>
-      <section data-nimib-slide-number="25" data-auto-animate >
+      <section data-nimib-slide-number="33" data-auto-animate >
       <h3>Augusti</h3>
       <ul>
       <div class="fragment fade-in" data-fragment-index="20" data-fragment-index-nimib="20"> 
@@ -319,7 +472,7 @@ li {
       </ul>
       </ul>
       </section>
-      <section data-nimib-slide-number="26" data-auto-animate >
+      <section data-nimib-slide-number="34" data-auto-animate >
       <h3>September</h3>
       <ul>
       <div class="fragment fade-in" data-fragment-index="24" data-fragment-index-nimib="24"> 
@@ -352,39 +505,39 @@ li {
   
       </ul>
       </section>
-      <section data-nimib-slide-number="27" data-auto-animate >
+      <section data-nimib-slide-number="35" data-auto-animate >
       <h3>September</h3>
       <img data-src="assets/fick_jobbet.jpg" class="r-stretch">
       </section>
-      <section data-nimib-slide-number="28" data-auto-animate >
+      <section data-nimib-slide-number="36" data-auto-animate >
       <h3>Kardemumman</h3>
       </section>
-      <section data-nimib-slide-number="29" data-auto-animate >
+      <section data-nimib-slide-number="37" data-auto-animate >
       <h3>Kardemumman</h3>
       <p>5 månader</p>
       </section>
-      <section data-nimib-slide-number="30" data-auto-animate >
+      <section data-nimib-slide-number="38" data-auto-animate >
       <h3>Kardemumman</h3>
       <p>5 månader</p>
       <p>60+ ansökningar</p>
       </section>
-      <section data-nimib-slide-number="31" data-auto-animate >
+      <section data-nimib-slide-number="39" data-auto-animate >
       <h3>Kardemumman</h3>
       <p>5 månader</p>
       <p>60+ ansökningar</p>
       <p>Vad hjälpte?</p>
       </section>
-      <section data-nimib-slide-number="32" data-auto-animate >
+      <section data-nimib-slide-number="40" data-auto-animate >
       <h3>Kardemumman</h3>
       <p>Vad hjälpte?</p>
       <img data-src="assets/idk.jpg" class="r-stretch">
       </section>
-      <section data-nimib-slide-number="33" data-auto-animate >
+      <section data-nimib-slide-number="41" data-auto-animate >
       <h3>Kardemumman</h3>
       <p>Vad hjälpte?</p>
       <img data-src="assets/the_same_cv.jpg" class="r-stretch">
       </section>
-      <section data-nimib-slide-number="34" data-auto-animate >
+      <section data-nimib-slide-number="42" data-auto-animate >
       <h3>Kardemumman</h3>
       <p>Vad hjälpte?</p>
       <ul>
@@ -404,7 +557,7 @@ li {
   
       </ul>
       </section>
-      <section data-nimib-slide-number="35" >
+      <section data-nimib-slide-number="43" >
           <style>
         @keyframes swing {
             20% { transform: rotate3d(0, 0, 1, 15deg); }
@@ -425,18 +578,18 @@ li {
       </div>
       </section>
       </section>
-      <section data-nimib-slide-number="36" >
-      <section data-nimib-slide-number="37" data-auto-animate >
+      <section data-nimib-slide-number="44" >
+      <section data-nimib-slide-number="45" data-auto-animate >
       <h3>Första jobbet</h3>
       </section>
-      <section data-nimib-slide-number="38" data-auto-animate >
+      <section data-nimib-slide-number="46" data-auto-animate >
       <h3>Första jobbet</h3>
       <figure>
 <img src="assets/sensebit.png" alt="">
 <figcaption></figcaption>
 </figure>
       </section>
-      <section data-nimib-slide-number="39" >
+      <section data-nimib-slide-number="47" >
       <h4>FLEX</h4>
       <div class="fragment fade-in" data-fragment-index="30" data-fragment-index-nimib="30"> 
   
@@ -444,22 +597,22 @@ li {
       </div>
   
       </section>
-      <section data-nimib-slide-number="40" data-auto-animate >
+      <section data-nimib-slide-number="48" data-auto-animate >
       <h4>VISION</h4>
       <figure>
 <img src="assets/vision_produt_photo.png" alt="">
 <figcaption></figcaption>
 </figure>
       </section>
-      <section data-nimib-slide-number="41" data-auto-animate >
+      <section data-nimib-slide-number="49" data-auto-animate >
       <h4>VISION</h4>
       <img data-src="assets/detect.png" class="r-stretch">
       </section>
-      <section data-nimib-slide-number="42" data-auto-animate >
+      <section data-nimib-slide-number="50" data-auto-animate >
       <h4>VISION</h4>
       <img data-src="assets/track.png" class="r-stretch">
       </section>
-      <section data-nimib-slide-number="43" >
+      <section data-nimib-slide-number="51" >
       <h4>Trafficweb</h4>
       <div class="fragment fade-in" data-fragment-index="31" data-fragment-index-nimib="31"> 
   
@@ -470,10 +623,10 @@ li {
       </div>
   
       </section>
-      <section data-nimib-slide-number="44" data-auto-animate >
+      <section data-nimib-slide-number="52" data-auto-animate >
       <h3>Jobbet</h3>
       </section>
-      <section data-nimib-slide-number="45" data-auto-animate >
+      <section data-nimib-slide-number="53" data-auto-animate >
       <h3>Jobbet</h3>
       <ul>
       <div class="fragment fade-in" data-fragment-index="32" data-fragment-index-nimib="32"> 
@@ -522,7 +675,7 @@ li {
       </ul>
       </ul>
       </section>
-      <section data-nimib-slide-number="46" data-auto-animate >
+      <section data-nimib-slide-number="54" data-auto-animate >
       <h3>Jobbet</h3>
       <ul>
       <div class="fragment fade-in" data-fragment-index="38" data-fragment-index-nimib="38"> 
@@ -548,17 +701,17 @@ li {
   
       </ul>
       </section>
-      <section data-nimib-slide-number="47" data-auto-animate >
+      <section data-nimib-slide-number="55" data-auto-animate >
       <h3>Första året</h3>
       </section>
-      <section data-nimib-slide-number="48" data-auto-animate >
+      <section data-nimib-slide-number="56" data-auto-animate >
       <h3>Första året</h3>
       <figure>
 <img src="assets/first_year.jpg" alt="">
 <figcaption></figcaption>
 </figure>
       </section>
-      <section data-nimib-slide-number="49" data-auto-animate >
+      <section data-nimib-slide-number="57" data-auto-animate >
       <h3>Första året</h3>
       <ul>
       <div class="fragment fade-in" data-fragment-index="41" data-fragment-index-nimib="41"> 
@@ -584,27 +737,29 @@ li {
   
       </ul>
       </section>
-      <section data-nimib-slide-number="50" >
+      <section data-nimib-slide-number="58" >
       <style>
-    @keyframes bounce {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-30px); }
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
     }
-    .bounce-question {
-        animation: bounce 2s infinite;
+    .pulse-effect {
         color: #e74c3c;
+        animation: pulse 1.5s infinite ease-in-out;
+        display: inline-block;
     }
 </style>
-<div class="bounce-question">
+<div class="pulse-effect">
       <h2 class="r-fit-text"> <p>Frågor?</p> </h2>
       </div>
       </section>
       </section>
-      <section data-nimib-slide-number="51" >
-      <section data-nimib-slide-number="52" data-auto-animate >
+      <section data-nimib-slide-number="59" >
+      <section data-nimib-slide-number="60" data-auto-animate >
       <h3>Användbara Kurser</h3>
       </section>
-      <section data-nimib-slide-number="53" data-auto-animate >
+      <section data-nimib-slide-number="61" data-auto-animate >
       <h3>Användbara Kurser</h3>
       <ul>
       <div class="fragment fade-in" data-fragment-index="44" data-fragment-index-nimib="44"> 
@@ -623,7 +778,7 @@ li {
   
       </ul>
       </section>
-      <section data-nimib-slide-number="54" data-auto-animate >
+      <section data-nimib-slide-number="62" data-auto-animate >
       <h3>Användbara Kurser</h3>
       <ul>
       <div class="fragment fade-in" data-fragment-index="46" data-fragment-index-nimib="46"> 
@@ -642,7 +797,7 @@ li {
   
       </ul>
       </section>
-      <section data-nimib-slide-number="55" data-auto-animate >
+      <section data-nimib-slide-number="63" data-auto-animate >
       <h3>Användbara Kurser</h3>
       <ul>
       <div class="fragment fade-in" data-fragment-index="48" data-fragment-index-nimib="48"> 
@@ -661,13 +816,10 @@ li {
   
       </ul>
       </section>
-      <section data-nimib-slide-number="56" data-auto-animate >
-      <h3>Användbara Kurser</h3>
-      </section>
-      <section data-nimib-slide-number="57" data-auto-animate >
+      <section data-nimib-slide-number="64" data-auto-animate >
       <h2 class="r-fit-text"> <p>Hade jag gjort annorlunda?</p> </h2>
       </section>
-      <section data-nimib-slide-number="58" data-auto-animate >
+      <section data-nimib-slide-number="65" data-auto-animate >
       <h2 class="r-fit-text"> <p>Hade jag gjort annorlunda?</p> </h2>
       <ul>
       <div class="fragment fade-in" data-fragment-index="50" data-fragment-index-nimib="50"> 
@@ -686,7 +838,7 @@ li {
   
       </ul>
       </section>
-      <section data-nimib-slide-number="59" >
+      <section data-nimib-slide-number="66" >
           <style>
     @keyframes slowRotate {
         from { transform: rotate(0deg); }
@@ -705,6 +857,176 @@ li {
       </div>
       </section>
       </section>
+      <section data-nimib-slide-number="67" >
+      <section data-nimib-slide-number="68" data-auto-animate >
+      <h3>AI för kodning (min personliga take)</h3>
+      </section>
+      <section data-nimib-slide-number="69" data-auto-animate >
+      <h3>AI för kodning (min personliga take)</h3>
+      <ul>
+      <div class="fragment fade-in" data-fragment-index="52" data-fragment-index-nimib="52"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="52" data-fragment-index-nimib="52">
+      <p>Chatbot (Kagi)</p>
+      </li>
+      </div>
+  
+      <ul>
+      <div class="fragment fade-in" data-fragment-index="53" data-fragment-index-nimib="53"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="53" data-fragment-index-nimib="53">
+      <p>Ersatte sökningar / Stackoverflow</p>
+      </li>
+      </div>
+  
+      <div class="fragment fade-in" data-fragment-index="54" data-fragment-index-nimib="54"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="54" data-fragment-index-nimib="54">
+      <p>Copy-Paste</p>
+      </li>
+      </div>
+  
+      </ul>
+      <div class="fragment fade-in" data-fragment-index="55" data-fragment-index-nimib="55"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="55" data-fragment-index-nimib="55">
+      <p>Claude Code</p>
+      </li>
+      </div>
+  
+      <ul>
+      <div class="fragment fade-in" data-fragment-index="56" data-fragment-index-nimib="56"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="56" data-fragment-index-nimib="56">
+      <p>Tillgång till all kod</p>
+      </li>
+      </div>
+  
+      <div class="fragment fade-in" data-fragment-index="57" data-fragment-index-nimib="57"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="57" data-fragment-index-nimib="57">
+      <p>Kan göra ändringar själv</p>
+      </li>
+      </div>
+  
+      </ul>
+      </ul>
+      </section>
+      <section data-nimib-slide-number="70" data-auto-animate >
+      <h3>AI för kodning (min personliga take)</h3>
+      <figure>
+<img src="assets/shitin_shitout.jpg" alt="">
+<figcaption></figcaption>
+</figure>
+      </section>
+      <section data-nimib-slide-number="71" data-auto-animate >
+      <h3>AI för kodning (min personliga take)</h3>
+      <figure>
+<img src="assets/vibe_code.jpg" alt="">
+<figcaption></figcaption>
+</figure>
+      </section>
+      <section data-nimib-slide-number="72" data-auto-animate >
+      <h3>AI för kodning (min personliga take)</h3>
+      <ul>
+      <div class="fragment fade-in" data-fragment-index="58" data-fragment-index-nimib="58"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="58" data-fragment-index-nimib="58">
+      <p><code>Vibe-koda != Koda med AI</code></p>
+      </li>
+      </div>
+  
+      <div class="fragment fade-in" data-fragment-index="59" data-fragment-index-nimib="59"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="59" data-fragment-index-nimib="59">
+      <p>Skriva tråkig kod</p>
+      </li>
+      </div>
+  
+      <div class="fragment fade-in" data-fragment-index="60" data-fragment-index-nimib="60"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="60" data-fragment-index-nimib="60">
+      <p>Jag är ansvarig för koden som skrivs</p>
+      </li>
+      </div>
+  
+      <ul>
+      <div class="fragment fade-in" data-fragment-index="61" data-fragment-index-nimib="61"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="61" data-fragment-index-nimib="61">
+      <p>Jag måste förstå koden</p>
+      </li>
+      </div>
+  
+      </ul>
+      </ul>
+      </section>
+      <section data-nimib-slide-number="73" data-auto-animate >
+      <h3>AI för kodning (min personliga take)</h3>
+      <ul>
+      <div class="fragment fade-in" data-fragment-index="62" data-fragment-index-nimib="62"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="62" data-fragment-index-nimib="62">
+      <p>Förstå kod</p>
+      </li>
+      </div>
+  
+      <div class="fragment fade-in" data-fragment-index="63" data-fragment-index-nimib="63"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="63" data-fragment-index-nimib="63">
+      <p>Högnivå förståelse av system</p>
+      </li>
+      </div>
+  
+      </ul>
+      </section>
+      <section data-nimib-slide-number="74" >
+          <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-25px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-effect {
+            color: #2ecc71;
+            text-shadow: 0 0 20px #2ecc71;
+            animation: float 4s ease-in-out infinite;
+            display: inline-block;
+        }
+    </style>
+    <div class="float-effect">
+  
+      <h2 class="r-fit-text"> <p>Frågor?</p> </h2>
+      </div>
+      </section>
+      </section>
+      <section data-nimib-slide-number="75" >
+      <section data-nimib-slide-number="76" >
+          <style>
+        @keyframes jello {
+            0%, 11.1%, 100% { transform: none; }
+            22.2% { transform: skewX(-12.5deg) skewY(-12.5deg); }
+            33.3% { transform: skewX(6.25deg) skewY(6.25deg); }
+            44.4% { transform: skewX(-3.125deg) skewY(-3.125deg); }
+            55.5% { transform: skewX(1.5625deg) skewY(1.5625deg); }
+            66.6% { transform: skewX(-0.78125deg) skewY(-0.78125deg); }
+            77.7% { transform: skewX(0.390625deg) skewY(0.390625deg); }
+            88.8% { transform: skewX(-0.1953125deg) skewY(-0.1953125deg); }
+        }
+        .jello-effect {
+            color: #e67e22;
+            animation: jello 3s infinite;
+            display: inline-block;
+            transform-origin: center center;
+        }
+    </style>
+    <div class="jello-effect">
+  
+      <p>Tack o bock 🌮🐐</p>
+      <h2 class="r-fit-text"> <p>Frågor?</p> </h2>
+      </div>
+      </section>
+      </section>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -716,6 +1038,7 @@ li {
         RevealHighlight,
         RevealNotes,
       ],
+      mouseWheel: true,
     });
   </script>
   </body>
