@@ -464,16 +464,23 @@ template avslutning =
       jello:
         nbText: "Tack o bock 🌮🐐"
         bigText: "Frågor?"
-      nbImage("")
+      
+      nbText: "Slides + bonus-memes:"
+      fitImage("assets/qr.png")
+      nbText: "[www.hugogranstrom.github.io/alumnpresentation-24-mars-2026/](www.hugogranstrom.github.io/alumnpresentation-24-mars-2026/)"
 
 template bonus =
   slide:
     slide:
       nbText: "## Bonusmaterial"
     slide:
-      nbImage("assets/biscoff.gif")
+      fitImage("assets/biscoff.gif")
     slide:
-      nbImage("assets/this_is_fine.jpg")
+      fitImage("assets/this_is_fine.jpg")
+    slide:
+      fitImage("assets/trollstigen.jpg")
+    slide:
+      fitImage("assets/trollstigen_underwater.jpg")
 
 #questions()
 intro()
