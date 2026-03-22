@@ -354,8 +354,42 @@ template jobSearch =
 
 template firstJob =
   slide:
+    autoAnimateSlides(2):
+      nbText: "### Första jobbet"
+      showAt(2):
+        nbImage("assets/sensebit.png")
     slide:
-      nbText: "Första jobbet"
+      nbText: "#### FLEX"
+      fragment:
+        fitImage("assets/FLEX-large.png")
+    autoAnimateSlides(3):
+      nbText: "#### VISION"
+      showAt(1):
+        nbImage("assets/vision_produt_photo.png")
+      showAt(2):
+        fitImage("assets/detect.png")
+      showAt(3):
+        fitImage("assets/track.png")
+    slide:
+        nbText: "#### Trafficweb"
+        fragment:
+          nbImage("assets/trafficweb.png")
+    # Teamet - 3 pers
+    #   Fördelar och nackdelar
+    #   Ansvar
+    #   Kan påverka
+    # Arbetsuppgifter - väldigt varierat
+    #   Systemutvecklare på pappret - högst oklart begrepp, snarare Fullstackutvecklare+
+    autoAnimateSlides(5):
+      nbText: "### Första året"
+      showAt(2):
+        nbImage("assets/first_year.jpg")
+    # Första tiden - riktig crash course om allt möjligt
+    # - Man lär sig jättemycket på jobbet
+    # - Är ganska lite av det man lärde sig i skolan som man har direkt använding för
+    # - Problemlösningsskillz mycket bra att ha, och att vara snabblärd
+
+      
     slide:
       bouncing:
         bigText: "Frågor?"
@@ -383,6 +417,9 @@ template kurser =
         unorderedList:
           liText: "Inbyggda system" # läste elektronik men inte praktisk användning av det. För teoretiskt
           liText: "Begränsade val"
+    slide:
+      slowRotate:
+        bigText: "Frågor?"
 
 template ai =
   slide:
