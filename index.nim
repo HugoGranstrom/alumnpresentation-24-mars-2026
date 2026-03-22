@@ -265,7 +265,6 @@ template studies =
         nbText: "\"AI-inriktning\""
       showAt(5):
         nbText: "IT-gruppen"
-    #questions()
 
 template exjobb =
   slide:
@@ -279,7 +278,9 @@ template exjobb =
             liText: "Analysera videokvalité"
             liText: "Behandlades som anställd"
             liText: "Jobb?"
-    #questions()
+    slide:
+      heartbeat:
+        bigText: "Frågor?"
 
 template jobSearch =
   slide:
@@ -406,7 +407,7 @@ template firstJob =
 
 template kurser =
   slide:
-    autoAnimateSlides(5):
+    autoAnimateSlides(4):
       nbText: "### Användbara Kurser"
       showAt(2):
         unorderedList:
@@ -444,12 +445,12 @@ template avslutning =
     #questions()
 
 #questions()
-#intro()
-#studies()
-#exjobb()
+intro()
+studies()
+exjobb()
 jobSearch()
-#firstJob()
-#kurser()
+firstJob()
+kurser()
 # ai()
 # avslutning()
 
