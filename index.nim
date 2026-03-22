@@ -407,18 +407,13 @@ template firstJob =
 
 template kurser =
   slide:
-    autoAnimateSlides(4):
+    autoAnimateSlides(2):
       nbText: "### Användbara Kurser"
       showAt(2):
         unorderedList:
           liText: "Databasteknik I"
           liText: "Högprestandaprogrammering"
-      showAt(3):
-        unorderedList:
           liText: "Statistisk maskininlärning"
-          liText: "Förstärkningsinlärning"
-      showAt(4):
-        unorderedList:
           liText: "Datoriserad bildanalys I"
           liText: "Djup maskininlärning för bildanalys"
 
@@ -434,7 +429,7 @@ template kurser =
 
 template ai =
   slide:
-    autoAnimateSlides(6):
+    autoAnimateSlides(5):
       nbText: "### AI för kodning (min personliga take)"
       showAt(2):
         unorderedList:
@@ -457,24 +452,30 @@ template ai =
           liText: "Jag är ansvarig för koden som skrivs"
           unorderedList:
             liText: "Jag måste förstå koden"
-      showAt(6):
-        unorderedList:
-          liText: "Förstå kod"
-          liText: "Högnivå förståelse av system"
-
     slide:
-      ufoFloat:
-        bigText: "Frågor?"
+      nbText: "### AI för kodning - Tips"
+      unorderedList:
+        liText: "Förstå kod"
+        liText: "Högnivå förståelse av system"
 
 template avslutning =
   slide:
     slide:
       jello:
         nbText: "Tack o bock 🌮🐐"
-      
         bigText: "Frågor?"
+      nbImage("")
 
-questions()
+template bonus =
+  slide:
+    slide:
+      nbText: "## Bonusmaterial"
+    slide:
+      nbImage("assets/biscoff.gif")
+    slide:
+      nbImage("assets/this_is_fine.jpg")
+
+#questions()
 intro()
 studies()
 exjobb()
@@ -483,6 +484,7 @@ firstJob()
 kurser()
 ai()
 avslutning()
+bonus()
 
 useScrollWheel()
 
