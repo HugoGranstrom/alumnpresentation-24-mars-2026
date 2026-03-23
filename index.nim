@@ -254,30 +254,29 @@ template studies =
   slide:
     autoAnimateSlides(5):
       nbText: "### Studietiden"
-      showAt(2):
+      showAt(1):
         fragment(fadeInThenSemiOut):
           nbText: "Började 2018"
         fragment(fadeInThenSemiOut):
           nbText: "Examen 2023"
-      showAt(3..4):
+      showAt(2..3):
         nbText: "Beräkningsvetenskap"
-      showAt(4):
+      showAt(3):
         nbText: "\"AI-inriktning\""
-      showAt(5):
+      showAt(4):
         nbText: "IT-gruppen"
 
 template exjobb =
   slide:
-    autoAnimateSlides(2):
+    slide:
       nbText: "### Exjobb"
-      showAt(2):
+      unorderedList:
+        liText: "Sökandet"
+        liText: "IMINT"
         unorderedList:
-          liText: "Sökandet"
-          liText: "IMINT"
-          unorderedList:
-            liText: "Analysera videokvalité"
-            liText: "Behandlades som anställd"
-            liText: "Jobb?"
+          liText: "Analysera videokvalité"
+          liText: "Behandlades som anställd"
+          liText: "Jobb?"
     slide:
       heartbeat:
         bigText: "Frågor?"
@@ -362,8 +361,7 @@ template firstJob =
         nbImage("assets/sensebit.png")
     slide:
       nbText: "#### FLEX"
-      fragment:
-        fitImage("assets/FLEX-large.png")
+      fitImage("assets/FLEX-large.png")
     autoAnimateSlides(3):
       nbText: "#### VISION"
       showAt(1):
@@ -374,11 +372,10 @@ template firstJob =
         fitImage("assets/track.png")
     slide:
         nbText: "#### Trafficweb"
-        fragment:
-          nbImage("assets/trafficweb.png")
-    autoAnimateSlides(3):
+        nbImage("assets/trafficweb.png")
+    autoAnimateSlides(2):
       nbText: "### Jobbet"
-      showAt(2):
+      showAt(1):
         unorderedList:
           liText: "Kontor: Uppsala & Kista"
           liText: "6 anställda, 3 utvecklare"
@@ -387,16 +384,16 @@ template firstJob =
             liText: "Programmera"
             liText: "Drifta"
             liText: "Bygga"
-      showAt(3):
+      showAt(2):
         unorderedList:
           liText: "Ansvar"
           liText: "Påverka"
           liText: "Varierade arbetsuppgifter"
-    autoAnimateSlides(3):
+    autoAnimateSlides(2):
       nbText: "### Första året"
-      showAt(2):
+      showAt(1):
         nbImage("assets/first_year.jpg")
-      showAt(3):
+      showAt(2):
         unorderedList:
           liText: "Crash course"
           liText: "Nytta av kursmaterial?"
@@ -418,7 +415,7 @@ template kurser =
           liText: "Djup maskininlärning för bildanalys"
 
     autoAnimateSlides(2):
-      bigText: "Hade jag gjort annorlunda?"
+      nbText: "## Hade jag gjort annorlunda?"
       showAt(2):
         unorderedList:
           liText: "Inbyggda system" # läste elektronik men inte praktisk användning av det. För teoretiskt
@@ -482,7 +479,6 @@ template bonus =
     slide:
       fitImage("assets/trollstigen_underwater.jpg")
 
-#questions()
 intro()
 studies()
 exjobb()
